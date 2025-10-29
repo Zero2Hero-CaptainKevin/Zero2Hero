@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero to Hero Academy | De Principiante a Héroe del Inglés</title>
+    <!-- Carga de Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de fuente Inter (simula Poppins/Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Paleta Heroica */
+        /* Azul Profundo (#0041C2) y Rojo Brillante (#E50914) para el fondo */
+        .hero-gradient {
+            background: linear-gradient(135deg, #0041C2 0%, #E50914 100%);
+        }
+        
+        /* CTA PRIMARIO - AHORA ROJO FUERTE Y LLAMATIVO */
+        .cta-primary {
+            /* Rojo Brillante (#E50914) */
+            @apply bg-red-600 text-white font-extrabold text-xl sm:text-2xl px-10 py-5 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.03] hover:bg-red-700;
+            box-shadow: 0 10px 20px -5px rgba(229, 9, 20, 0.5); /* Sombra roja potente */
+        }
+        
+        /* CTA SECUNDARIO - Un rojo ligeramente más oscuro */
+        .cta-secondary {
+            /* Rojo Oscuro */
+            @apply bg-red-700 text-white font-bold text-lg px-8 py-3 rounded-lg hover:bg-red-800 transition duration-200;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HERO SECTION - Inicio visual impactante (Zero to Hero) -->
+    <header class="hero-gradient py-24 sm:py-36 text-white relative overflow-hidden">
+        <!-- Overlay para textura cinematográfica -->
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            
+            <div class="inline-block bg-white text-blue-800 text-sm font-black tracking-widest uppercase px-5 py-2 rounded-full mb-4 shadow-lg">
+                Zero to Hero Academy 🔥
+            </div>
+            
+            <h2 class="text-5xl sm:text-8xl font-black mb-6 leading-none">
+                <span class="text-yellow-400">¡EL INGLÉS REAL</span><br>
+                PASO A PASO!
+            </h2>
+            <p class="text-xl sm:text-3xl font-light max-w-4xl mx-auto mb-12 text-gray-200">
+                <span class="font-bold">ESLOGAN:</span> Vive el inglés, repítelo y úsalo hasta hacerlo parte de ti. De principiante a héroe del inglés.
+            </p>
+
+            <!-- Espacio para Video Principal (Embed Placeholder) -->
+            <div class="max-w-3xl mx-auto bg-black border-4 border-yellow-400 rounded-xl shadow-2xl mb-12 h-56 sm:h-96 flex items-center justify-center">
+                <span class="text-white text-2xl font-semibold">Video Principal (30-60s) AQUÍ</span>
+            </div>
+
+            <a href="#planes" id="cta-hero" class="cta-primary">
+                ÚNETE AHORA AL ENTRENAMIENTO 🚀
+            </a>
+            
+        </div>
+    </header>
+
+    <!-- 2. Beneficios Clave / Razones para unirse -->
+    <section class="bg-gray-50 py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-black text-center text-gray-800 mb-12">LA ACADEMIA DONDE SE CREAN HÉROES BILINGÜES</h3>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Beneficio 1: Inglés Real -->
+                <div class="p-6 rounded-xl text-center">
+                    <div class="text-5xl mb-3 text-red-600">💬</div>
+                    <h4 class="text-xl font-bold mb-2 text-gray-900">Inglés que se Habla</h4>
+                    <p class="text-gray-600">Aprendes el inglés real y conversacional, libre de formalidades inútiles, como lo usan los nativos.</p>
+                </div>
+                
+                <!-- Beneficio 2: Fluent Steps™ -->
+                <div class="p-6 rounded-xl text-center">
+                    <div class="text-5xl mb-3 text-blue-700">🧠</div>
+                    <h4 class="text-xl font-bold mb-2 text-gray-900">Método Fluent Steps™</h4>
+                    <p class="text-gray-600"><strong>Live it, Repeat it, Use it.</strong> Aprende a pensar en inglés y a romper el miedo a hablar.</p>
+                </div>
+                
+                <!-- Beneficio 3: Resultados medibles -->
+                <div class="p-6 rounded-xl text-center">
+                    <div class="text-5xl mb-3 text-yellow-500">🎯</div>
+                    <h4 class="text-xl font-bold mb-2 text-gray-900">Victoria Rápida</h4>
+                    <p class="text-gray-600">Resultados visibles y medibles desde la primera semana. Sube de nivel rápidamente.</p>
+                </div>
+                
+                <!-- Beneficio 4: Confianza Total -->
+                <div class="p-6 rounded-xl text-center">
+                    <div class="text-5xl mb-3 text-red-600">💪</div>
+                    <h4 class="text-xl font-bold mb-2 text-gray-900">Confianza Sin Miedo</h4>
+                    <p class="text-gray-600">Elimina la frustración. Gana la confianza para hablar en reuniones, viajes o entrevistas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 3. PLANES Y CONVERSIONES (3 Propósitos Claros) -->
+    <section class="bg-white py-16 sm:py-24" id="planes">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-black text-center text-blue-800 mb-16">ELIJE TU CAMINO HACIA LA MAESTRÍA</h3>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                
+                <!-- Plan 1: Curso Principal (Zero to Hero) - CTA ROJO -->
+                <div class="bg-blue-50 border-t-8 border-blue-700 p-8 rounded-xl shadow-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-sm font-extrabold text-red-600 bg-red-100 px-3 py-1 rounded-full uppercase">MÁS POPULAR</span>
+                        <h4 class="text-3xl font-black text-blue-900 my-4">Curso Zero to Hero (COMPLETO)</h4>
+                        <p class="text-gray-700 mb-6">Tu entrenamiento completo para dominar el inglés desde cero hasta fluidez total. Acceso de por vida.</p>
+                        <ul class="space-y-3 text-gray-600 mb-8">
+                            <li class="flex items-center text-lg"><span class="text-blue-700 mr-3">✅</span> 100+ Lecciones en video</li>
+                            <li class="flex items-center text-lg"><span class="text-blue-700 mr-3">✅</span> Todos los módulos de gramática y vocabulario</li>
+                            <li class="flex items-center text-lg"><span class="text-blue-700 mr-3">✅</span> Certificado de finalización</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="cta-primary w-full text-center mt-4 text-xl">
+                        Inscríbete hoy y empieza tu transformación
+                    </a>
+                </div>
+
+                <!-- Plan 2: Suscripción Héroe ($10.99/mes con $16 tachado) - CTA ROJO SECUNDARIO -->
+                <div class="bg-gray-100 border-t-8 border-yellow-500 p-8 rounded-xl shadow-2xl flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-3xl font-black text-gray-900 my-4">Suscripción Héroe</h4>
+                        
+                        <!-- Bloque de Precio con Urgencia -->
+                        <div class="text-4xl font-black text-red-600 mb-4 flex items-baseline">
+                            $10.99<span class="text-xl font-normal ml-1">/mes</span>
+                            <span class="text-xl text-gray-500 line-through ml-3 font-normal">$16</span>
+                        </div>
+
+                        <p class="text-gray-700 mb-6">Mantén tu nivel y crece constantemente con apoyo semanal y recursos premium.</p>
+                        <ul class="space-y-3 text-gray-600 mb-8">
+                            <li class="flex items-center text-lg"><span class="text-yellow-500 mr-3">⭐</span> Asesorías semanales en vivo</li>
+                            <li class="flex items-center text-lg"><span class="text-yellow-500 mr-3">⭐</span> Comunidad exclusiva en WhatsApp</li>
+                            <li class="flex items-center text-lg"><span class="text-yellow-500 mr-3">⭐</span> Feedback personalizado de Kevin</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="cta-secondary w-full text-center mt-4">
+                        Únete a la comunidad y crece con otros héroes
+                    </a>
+                </div>
+                
+                <!-- Plan 3: Curso gratis de prueba (Lead magnet) -->
+                <div class="bg-red-50 border-t-8 border-red-600 p-8 rounded-xl shadow-2xl flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-3xl font-black text-red-700 my-4">Curso GRATIS de Prueba</h4>
+                        <p class="text-gray-700 mb-6">Accede a "Tu primera semana de inglés real" y prueba la metodología Fluent Steps™ sin compromiso.</p>
+                        
+                        <!-- Formulario de Captura de Leads (Simplificado) -->
+                        <form class="space-y-4">
+                            <input type="text" placeholder="Tu Nombre Completo" required class="w-full p-3 border border-red-300 rounded-lg focus:ring-red-500 focus:border-red-500">
+                            <input type="email" placeholder="Tu Correo Electrónico" required class="w-full p-3 border border-red-300 rounded-lg focus:ring-red-500 focus:border-red-500">
+                            <input type="tel" placeholder="WhatsApp (Opcional)" class="w-full p-3 border border-red-300 rounded-lg focus:ring-red-500 focus:border-red-500">
+                            <button type="submit" class="w-full bg-red-600 text-white font-bold py-3 rounded-lg hover:bg-red-700 transition duration-200">
+                                Empieza gratis y prueba tu potencial
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Sección de autoridad / confianza (Captain Kevin Vargas) -->
+    <section class="bg-blue-900 py-16 sm:py-24 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-black text-center text-yellow-400 mb-16">EL CREADOR DEL MÉTODO FLUENT STEPS™</h3>
+            
+            <div class="grid md:grid-cols-3 gap-10 items-center">
+                
+                <!-- Columna de Imagen (Placeholder) -->
+                <div class="md:col-span-1 text-center">
+                    <!-- Placeholder para la imagen de Kevin Vargas -->
+                    <div class="w-56 h-56 mx-auto bg-gray-200 rounded-full flex items-center justify-center shadow-xl border-4 border-yellow-400">
+                        <span class="text-7xl text-blue-800">🧑‍🎓</span>
+                    </div>
+                    <h4 class="text-2xl font-black mt-4 text-white">Kevin Vargas</h4>
+                    <p class="text-yellow-400 font-semibold">Captain Certificado & Creador de Zero to Hero</p>
+                </div>
+                
+                <!-- Columna de Biografía y Testimonios -->
+                <div class="md:col-span-2">
+                    <p class="text-xl text-gray-200 mb-6">
+                        Soy Kevin Vargas, Captain y creador de la metodología <strong>Fluent Steps™</strong> que ha transformado a cientos de hispanohablantes. Mi misión es simple: que logres la <strong>fluidez real</strong> que necesitas para abrir puertas profesionales y personales. No más libros aburridos, solo resultados.
+                    </p>
+                    
+                    <!-- Prototipo de Testimonios -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-gray-800 border-l-4 border-red-600 mt-6">
+                        <p class="italic mb-2">"De 'Zero' a sentirme 100% cómodo en mis videollamadas con clientes extranjeros. El método es un cambio de juego."</p>
+                        <p class="font-bold text-sm text-right">- Javier M., Alumno Héroe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Sección de cierre / llamada final a la acción -->
+    <section class="hero-gradient py-20 sm:py-28 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h3 class="text-5xl font-black mb-8 text-white leading-tight">¿LISTO PARA PASAR DE ZERO A HERO?</h3>
+            <p class="text-2xl text-yellow-400 font-semibold mb-10">Tu futuro no espera. ¡Empieza hoy tu transformación!</p>
+            
+            <!-- Botón Final - Ya era rojo, solo ajusto la clase para consistencia visual -->
+            <a href="#planes" id="cta-final" class="cta-primary text-3xl">
+                EMPIEZA AHORA ➡️
+            </a>
+            
+            <!-- Link de Contacto WhatsApp (Importante para conversión) -->
+            <a href="https://wa.me/XXXXXXXXXX" target="_blank" class="block mt-6 text-yellow-400 hover:text-white font-semibold underline">
+                ¿Tienes dudas? ¡Habla con el Captain Kevin por WhatsApp!
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 p-8 text-center">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-sm">&copy; 2023 Zero to Hero Academy. Todos los derechos reservados.</p>
+            <p class="text-xs mt-2">Política de Privacidad | Términos y Condiciones | Hecho con Pasión Heroica.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
